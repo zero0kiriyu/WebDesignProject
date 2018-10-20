@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习3</title>
+</head>
+<body>
+    <div class="head">
+        <h1>练习3</h1>
+        <hr />
+    </div>
+    <div class="content">
+        <form action="" method="post">
+            <input type="checkbox" id="apple" onclick="apple()">苹果
+            <input type="checkbox" id="orange" onclick="orange()">橘子
+            <input type="checkbox" id="banana" onclick="banana()">香蕉
+            <input type="submit" onclick="warning()">
+        </form>
+    </div>
+<script>
+    let total=0;
+    function warning()
+    {
+        alert("Your total cost is $"+total*1.05);
+        return false;
+    }
+    function apple()
+    {
+        if(document.getElementById("apple").checked)//被选中
+        {
+            total += 59;
+        }
+        else
+        {
+            total -=59;
+        }
+    }
+    function orange()
+    {
+        if(document.getElementById("orange").checked)//被选中
+        {
+            total += 49;
+        }
+        else
+        {
+            total -= 49;
+        }
+    }
+    function banana()
+    {
+        if(document.getElementById("banana").checked)//被选中
+        {
+            total += 39;
+        }
+        else
+        {
+            total -= 39;
+        }
+        //console.log(total);
+    }
+</script>
+</body>
+</html>

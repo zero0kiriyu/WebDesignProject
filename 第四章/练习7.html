@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习题7</title>
+</head>
+<body>
+<div class="head">
+    <h1> 练习7</h1>
+    <hr />
+</div>
+
+<div class="conetent">
+    <div sytle="display:flex;flex-direction:column"><button onclick="prompt1()">第一个参数</button>
+        <button onclick="prompt2()">第二个参数</button></div>
+    <br />
+    <p id="result"></p>
+</div>
+</body>
+<script type="text/javascript">
+    let text,para;
+    function prompt1()
+    {
+        text = prompt("Please input a text string","").split(" ").sort();
+    }
+    function prompt2()
+    {
+        para = prompt("Please input ascending or descending","ascending");
+        if(para==="descending")
+            text = text.reverse();
+        else if(para!=="ascending")
+        {
+            alert("Error input!!!");
+            return 0;
+        }
+        document.getElementById("result").innerHTML="结果:   "+text.join(" ");
+    }
+</script>
+</html>

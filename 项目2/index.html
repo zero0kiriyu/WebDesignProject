@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>学校主页</title>
+    <style>
+        .navbar {
+            max-width: ;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: #003262;
+            border-top:0px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+        .navbar-left {
+            color:#ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            list-style: none;
+        }
+        .navbar-left > li {
+            padding-left:10px;
+            padding-right:10px;
+        }
+
+        .navbar-right{
+            font-size:100%;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            position: relative;
+            width: 300px;
+            margin: 10px;
+        }
+        .search-bar{
+
+            border-radius: 3px;
+            width:100%;
+            border:none;
+            outline:none;
+        }
+
+        .search-sub{
+            border-radius: 3px;
+            height: 26px;
+            width: 26px;
+            top:4px;
+            right: 8px;
+            border:none;
+            outline: none;
+            position: absolute;
+            cursor:pointer;
+            background: #F15B42;
+        }
+        .search-sub::before{
+            content: "\f105";
+            font-family: FontAwesome;
+            color: #F9F0DA;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .main{
+            margin-right:auto;
+            margin-left:auto;
+            max-width:1220px;
+        }
+    </style>
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navbar-left">
+            <li>首页</li>
+            <li>学校部门</li>
+            <li>师资队伍</li>
+            <li>学术科研</li>
+            <li>知名校友</li>
+        </ul>
+
+        <form class="navbar-right">
+            <input type="search" class="search-bar">
+            <button type="submit" class="search-sub"></button>
+        </form>
+    </div>
+        <div class="dropdownmenu">
+                <ul class="dropleft">
+                    <li><a href="#">新闻</a>
+                        <ul class="submenu">
+                            <li><a href="#">Difference between SVG vs. Canvas</a></li>
+                            <li><a href="#">New features in HTML5</a></li>
+                            <li><a href="#">Creating links to sections within a webpage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">关于我们</a>
+                        <ul class="submenu">
+                            <li><a href="#">Difference between SVG vs. Canvas</a></li>
+                            <li><a href="#">New features in HTML5</a></li>
+                            <li><a href="#">Creating links to sections within a webpage</a></li>
+                        </ul>
+                    </li>
+                    <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
+                    <li class="below-left"><a href="#">关于我们</a></li>
+                    <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
+                </ul>
+                <img class="logo" src="images/logo.png" />
+                <ul class="dropright">
+                    <li><a href="#">招生相关</a>
+                        <ul class="submenu">
+                            <li><a href="#">Difference between SVG vs. Canvas</a></li>
+                            <li><a href="#">New features in HTML5</a></li>
+                            <li><a href="#">Creating links to sections within a webpage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">联系方式</a>
+                        <ul class="submenu">
+                            <li><a href="#">Difference between SVG vs. Canvas</a></li>
+                            <li><a href="#">New features in HTML5</a></li>
+                            <li><a href="#">Creating links to sections within a webpage</a></li>
+                        </ul>
+                    </li>
+                    <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
+                    <li class="below-right"><a href="#">关于我们</a></li>
+                    <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
+                </ul>
+        </div>
+    <div class="main">
+        <div class="bigpicture" style="text-align: center;">
+            <img src="images/frontdoor.jpeg">
+
+        </div>
+        <div class="content1">
+        </div>
+        <div class="content2">
+        </div>
+        <div class="content3">
+        </div>
+        <div class="content4">
+        </div>
+        <div class="content5">
+        </div>
+    </div>
+    <div class="foot">
+
+    </div>
+</body>
+</html>

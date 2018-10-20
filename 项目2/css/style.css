@@ -1,0 +1,85 @@
+.dropdownmenu {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+	background-color: #f3f3f1;
+}
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+
+.dropright > li{
+    float: left;
+}
+
+.dropleft > li{
+    float: right;
+}
+.below-left {
+     margin-right:-6px!important;
+
+ }
+.below-right {
+    margin-left:-6px!important;
+}
+
+.dropdownmenu ul {
+
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	position: relative;
+	width:auto;
+}
+
+.dropdownmenu a {
+	color: #a51c30;
+	display: block;
+	font: 20px/40px "SimHei";
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.below-left a,.below-right a{
+	padding:0px;
+}
+
+.submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+	border: #000 1px solid;
+}
+li:hover ul.submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+.submenu li {
+	float: none;
+	width: 100%;
+}
+.submenu a:hover {
+	background: #DF4B05;
+}
+.submenu a {
+	background-color:#FFFF;
+}
+
+.logo {
+    margin-top:-54px;
+    height:170px;
+    width:auto;
+}
+
+

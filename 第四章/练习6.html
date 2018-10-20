@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习题6</title>
+</head>
+<body>
+<div class="head">
+    <h1> 练习6</h1>
+    <hr />
+</div>
+
+<div class="conetent">
+    <button onclick="disp_prompt()">点击输入</button>
+    <br />
+    <p id="result"></p>
+</div>
+</body>
+<script type="text/javascript">
+    function disp_prompt()
+    {
+        let text = prompt("Please input a text string","");
+        text = text.split(" ").sort();
+        document.getElementById("result").innerHTML="结果:   "+text.join(" ");
+    }
+</script>
+</html>

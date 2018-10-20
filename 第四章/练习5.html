@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习题5</title>
+</head>
+<body>
+<div class="head">
+    <h1> 练习5</h1>
+    <hr />
+</div>
+
+<div class="conetent">
+    <button onclick="disp_prompt()">点击输入</button>
+    <br />
+    <p id="result"></p>
+</div>
+</body>
+<script type="text/javascript">
+    function disp_prompt()
+    {
+        let name = prompt("Please input your name","");
+        let pattern= /[a-zA-Z]+, [a-zA-Z]+, [a-zA-Z]+/;
+        if(name.match(pattern)&&name.length<16)
+            document.getElementById("result").innerHTML="结果:   Valid name";
+        else
+            document.getElementById("result").innerHTML="结果:   Invalid name";
+    }
+</script>
+</html>

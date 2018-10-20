@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习题5</title>
+</head>
+<body>
+    <div class="head">
+        <h1> 练习5</h1>
+        <hr />
+    </div>
+    <div class="content">
+        <form action="" methond="post">
+            苹果<input type="text" name="apple" id="apple"><br />
+            橘子<input type="text" name="orange" id="orange"><br />
+            香蕉<input type="text" name="banana" id="banana"><br />
+            <input type="submit" onclick="warning()">
+        </form>
+    </div>
+</body>
+<script type="text/javascript">
+    function warning() {
+        let apple = parseInt(document.getElementById("apple").value);
+        let orange = parseInt(document.getElementById("orange").value);
+        let banana = parseInt(document.getElementById("banana").value);
+        if (isNaN(apple)||isNaN(orange)||isNaN(banana)) {
+            alert("错误输入！请输入正确数字");
+            return false;
+        }
+        if((0<=apple&&apple<=99)&&(0<=banana&&banana)&&(0<=orange&&orange)){
+            let price = apple*59+orange*49 +banana*39;
+            alert("Your total cost is $"+price*1.05);
+        }
+        else
+            alert("请输入0～99之间的数字!");
+        return false;
+    }
+</script>
+</html>

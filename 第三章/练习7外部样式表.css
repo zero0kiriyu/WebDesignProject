@@ -1,0 +1,18 @@
+    .main{
+        list-style-type:upper-roman;
+    }
+    .compact ol,.midsize ol,.sports ol{
+        list-style-type:upper-alpha;
+    }
+    .compact{
+        background-color:pink;
+    }
+    .midsize{
+        background-color:blue;
+    }
+    .sports{
+        background-color:red;
+    }
+    .inner{
+        list-style-type: decimal!important;
+    }
