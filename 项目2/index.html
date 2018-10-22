@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>学校主页</title>
     <style>
+        body{
+            margin:0px;
+            width:auto;
+        }
         .navbar {
-            max-width: ;
             margin-left:auto;
             margin-right:auto;
-            background-color: #003262;
+
+            background-color: #30393a;
             border-top:0px;
             display: flex;
             flex-direction: row;
@@ -64,89 +68,153 @@
             font-size: 20px;
             font-weight: bold;
         }
-        .main{
-            margin-right:auto;
-            margin-left:auto;
-            max-width:1220px;
+        .dropdownmenu {
+            color:#a51c30;
+        }
+        .bigpicture{
+            text-align: center;
+            background-color: #a51c30;
+        }
+        .bigpicture > img {
+            max-width:1300px;
+            max-height:557px;
+            height:100%;
+            width:100%;
+            vertical-align: middle;
+
+        }
+        .content1 {
+            background-color: rgb(247,247,247);
+        }
+        .thumbnail_part1 {
+            max-width:1300px;
+            vertical-align: middle;
+            margin:0 auto;
+            display:flex;
+            flex-direction: row;
+            width:auto;
+            justify-content: space-around;
+        }
+        .thumbnail{
+            margin-top:80px;
+        }
+        .thumbnail > img {
+            max-width:360px;
+            max-height:240px;
+            height:100%;
+            width:100%;
+            vertical-align: middle;
+        }
+        .color-bar {
+            height:8px;
+            width:100%;
+            background-color: #a51c30;
+        }
+        .text{
+            max-width:360px;
+            width:100%;
+            vertical-align: middle;
+        }
+        .caption {
+            text-align: center;
+
+        }
+        .introduce{
+
         }
     </style>
     <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="navbar">
-        <ul class="navbar-left">
-            <li>首页</li>
-            <li>学校部门</li>
-            <li>师资队伍</li>
-            <li>学术科研</li>
-            <li>知名校友</li>
-        </ul>
+<div class="navbar">
+    <ul class="navbar-left">
+        <li>首页</li>
+        <li>学校部门</li>
+        <li>师资队伍</li>
+        <li>学术科研</li>
+        <li>知名校友</li>
+    </ul>
 
-        <form class="navbar-right">
-            <input type="search" class="search-bar">
-            <button type="submit" class="search-sub"></button>
-        </form>
+    <form class="navbar-right">
+        <input type="search" class="search-bar">
+        <button type="submit" class="search-sub"></button>
+    </form>
+</div>
+<div class="dropdownmenu">
+    <ul class="dropleft">
+        <li><a href="#">新闻</a>
+            <ul class="submenu">
+                <li><a href="#">Difference between SVG vs. Canvas</a></li>
+                <li><a href="#">New features in HTML5</a></li>
+                <li><a href="#">Creating links to sections within a webpage</a></li>
+            </ul>
+        </li>
+        <li><a href="#">关于我们</a>
+            <ul class="submenu">
+                <li><a href="#">Difference between SVG vs. Canvas</a></li>
+                <li><a href="#">New features in HTML5</a></li>
+                <li><a href="#">Creating links to sections within a webpage</a></li>
+            </ul>
+        </li>
+        <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
+        <li class="below-left"><a href="#">关于我们</a></li>
+        <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
+    </ul>
+    <img class="logo" src="images/logo.png" />
+    <ul class="dropright">
+        <li><a href="#">招生相关</a>
+            <ul class="submenu">
+                <li><a href="#">Difference between SVG vs. Canvas</a></li>
+                <li><a href="#">New features in HTML5</a></li>
+                <li><a href="#">Creating links to sections within a webpage</a></li>
+            </ul>
+        </li>
+        <li><a href="#">联系方式</a>
+            <ul class="submenu">
+                <li><a href="#">Difference between SVG vs. Canvas</a></li>
+                <li><a href="#">New features in HTML5</a></li>
+                <li><a href="#">Creating links to sections within a webpage</a></li>
+            </ul>
+        </li>
+        <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
+        <li class="below-right"><a href="#">关于我们</a></li>
+        <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
+    </ul>
+</div>
+<div class="main">
+    <div class="bigpicture">
+        <img src="images/frontdoor.png">
     </div>
-        <div class="dropdownmenu">
-                <ul class="dropleft">
-                    <li><a href="#">新闻</a>
-                        <ul class="submenu">
-                            <li><a href="#">Difference between SVG vs. Canvas</a></li>
-                            <li><a href="#">New features in HTML5</a></li>
-                            <li><a href="#">Creating links to sections within a webpage</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">关于我们</a>
-                        <ul class="submenu">
-                            <li><a href="#">Difference between SVG vs. Canvas</a></li>
-                            <li><a href="#">New features in HTML5</a></li>
-                            <li><a href="#">Creating links to sections within a webpage</a></li>
-                        </ul>
-                    </li>
-                    <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
-                    <li class="below-left"><a href="#">关于我们</a></li>
-                    <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
-                </ul>
-                <img class="logo" src="images/logo.png" />
-                <ul class="dropright">
-                    <li><a href="#">招生相关</a>
-                        <ul class="submenu">
-                            <li><a href="#">Difference between SVG vs. Canvas</a></li>
-                            <li><a href="#">New features in HTML5</a></li>
-                            <li><a href="#">Creating links to sections within a webpage</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">联系方式</a>
-                        <ul class="submenu">
-                            <li><a href="#">Difference between SVG vs. Canvas</a></li>
-                            <li><a href="#">New features in HTML5</a></li>
-                            <li><a href="#">Creating links to sections within a webpage</a></li>
-                        </ul>
-                    </li>
-                    <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
-                    <li class="below-right"><a href="#">关于我们</a></li>
-                    <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
-                </ul>
+    <div class="content1">
+        <div class="thumbnail_part1">
+            <div class="thumbnail">
+                <img src="images/x1.jpg">
+                <div class="color-bar"></div>
+                <p class="caption"></p>
+            </div>
+            <div class="thumbnail">
+                <img src="images/bt1.jpg">
+                <div class="color-bar"></div>
+                <p class="caption"></p>
+                </div>
+            <div class="thumbnail">
+                <img src="images/nie1.jpg">
+                <div class="color-bar"></div>
+                <div class="text">
+                    <p class="caption"><strong>2018年“聂绀弩杯”大学生中华诗词邀请赛</strong></p>
+                    <p class="introduce">10月21日下午, 为庆祝改革开放40周年，弘扬以改革创新为核心的时代精神，2018年“聂绀弩杯”大学生中华诗词邀请赛决赛于我校音乐厅举行。</p>
+                </div>
+            </div>
         </div>
-    <div class="main">
-        <div class="bigpicture" style="text-align: center;">
-            <img src="images/frontdoor.jpeg">
+    </div>
+    <div class="content2">
+    </div>
+    <div class="content3">
+    </div>
+</div>
+<div class="foot">
 
-        </div>
-        <div class="content1">
-        </div>
-        <div class="content2">
-        </div>
-        <div class="content3">
-        </div>
-        <div class="content4">
-        </div>
-        <div class="content5">
-        </div>
-    </div>
-    <div class="foot">
-
-    </div>
+</div>
 </body>
 </html>
