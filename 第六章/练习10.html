@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>左右移动方框</title>
+    <script>
+        window.onload=function(){
+            var box = document.getElementById('box');
+            var text = document.getElementById('text');
+            var iLeft = 0;
+            var Speed = 1;
+            //定义一个定时器
+            var Timer = setInterval(Move,5);
+            var Timet_changec = setInterval(Change,25);
+            function Move(){
+                iLeft +=Speed;
+
+                if (iLeft>1300){
+                    Speed = -1
+                }
+                if(iLeft<0){
+                    Speed = 1
+                }
+                box.style.left = iLeft + 'px'
+            }
+            function Change(){
+                if(text.style.color=='blue')
+                    text.style.color = 'red';
+                else
+                    text.style.color = 'blue';
+
+            }
+
+        }
+
+    </script>
+    <style>
+        #box {
+            width:400px;
+            position: fixed;
+        }
+        #text{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box"><p id="text">Save time with TIMESAVER 2.2</p></div>
+
+</body>
+</html>

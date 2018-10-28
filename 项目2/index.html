@@ -6,122 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>学校主页</title>
     <style>
-        body{
-            margin:0px;
-            width:auto;
-        }
-        .navbar {
-            margin-left:auto;
-            margin-right:auto;
 
-            background-color: #30393a;
-            border-top:0px;
-            display: flex;
-            flex-direction: row;
-            justify-content:space-between;
-        }
-        .navbar-left {
-            color:#ffffff;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            list-style: none;
-        }
-        .navbar-left > li {
-            padding-left:10px;
-            padding-right:10px;
-        }
-
-        .navbar-right{
-            font-size:100%;
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: row;
-            position: relative;
-            width: 300px;
-            margin: 10px;
-        }
-        .search-bar{
-
-            border-radius: 3px;
-            width:100%;
-            border:none;
-            outline:none;
-        }
-
-        .search-sub{
-            border-radius: 3px;
-            height: 26px;
-            width: 26px;
-            top:4px;
-            right: 8px;
-            border:none;
-            outline: none;
-            position: absolute;
-            cursor:pointer;
-            background: #F15B42;
-        }
-        .search-sub::before{
-            content: "\f105";
-            font-family: FontAwesome;
-            color: #F9F0DA;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .dropdownmenu {
-            color:#a51c30;
-        }
-        .bigpicture{
-            text-align: center;
-            background-color: #a51c30;
-        }
-        .bigpicture > img {
-            max-width:1300px;
-            max-height:557px;
-            height:100%;
-            width:100%;
-            vertical-align: middle;
-
-        }
-        .content1 {
-            background-color: rgb(247,247,247);
-        }
-        .thumbnail_part1 {
-            max-width:1300px;
-            vertical-align: middle;
-            margin:0 auto;
-            display:flex;
-            flex-direction: row;
-            width:auto;
-            justify-content: space-around;
-        }
-        .thumbnail{
-            margin-top:80px;
-        }
-        .thumbnail > img {
-            max-width:360px;
-            max-height:240px;
-            height:100%;
-            width:100%;
-            vertical-align: middle;
-        }
-        .color-bar {
-            height:8px;
-            width:100%;
-            background-color: #a51c30;
-        }
-        .text{
-            max-width:360px;
-            width:100%;
-            vertical-align: middle;
-        }
-        .caption {
-            text-align: center;
-
-        }
-        .introduce{
-
-        }
     </style>
     <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -182,39 +67,141 @@
         <div style="clear:both;"></div> <!--新添加的空div，它和浮动元素同一级别，且位于最后-->
     </ul>
 </div>
-<div class="main">
+<div class="mainbody">
     <div class="bigpicture">
         <img src="images/frontdoor.png">
     </div>
     <div class="content1">
-        <div class="thumbnail_part1">
+        <div class="thumbnail_part">
             <div class="thumbnail">
-                <img src="images/x1.jpg">
+                <img src="images/t2.jpg">
                 <div class="color-bar"></div>
-                <p class="caption"></p>
+                <div class="text">
+                    <p class="caption"><strong>我校举行升旗仪式庆祝国庆69周年：欢乐迎国庆 浓浓爱国情</strong></p>
+                    <p>10月1日清晨，为喜迎新中国69岁华诞、纪念改革开放40周年，我校于文华公书林前举行升旗仪式。校团委书记杨臣，校团委副书记麻旎、陈娟和团委各部长等干部出席了本次升旗仪式。</p>
+                </div>
             </div>
             <div class="thumbnail">
                 <img src="images/bt1.jpg">
                 <div class="color-bar"></div>
-                <p class="caption"></p>
+                <div class="text">
+                    <p class="caption"><strong>百团招新火热进行：百社集锦，桂月争鸣</strong></p>
+                    <p>10月20日，由共青团华中师范大学委员会主办，华中师范大学学生社团联合会承办的“百团大战”拉开序幕。本次活动持续两天，旨在传承并发扬社团文化，构建和谐丰富的校园生活。</p>
                 </div>
+            </div>
             <div class="thumbnail">
                 <img src="images/nie1.jpg">
                 <div class="color-bar"></div>
                 <div class="text">
                     <p class="caption"><strong>2018年“聂绀弩杯”大学生中华诗词邀请赛</strong></p>
-                    <p class="introduce">10月21日下午, 为庆祝改革开放40周年，弘扬以改革创新为核心的时代精神，2018年“聂绀弩杯”大学生中华诗词邀请赛决赛于我校音乐厅举行。</p>
+                    <p>10月21日下午, 为庆祝改革开放40周年，弘扬以改革创新为核心的时代精神，2018年“聂绀弩杯”大学生中华诗词邀请赛决赛于我校音乐厅举行。</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="content2">
+        <div class="thumbnail_part">
+            <div class="thumbnail">
+                <img src="images/t2.jpg">
+                <div class="color-bar"></div>
+                <div class="text">
+                    <p class="caption"><strong>我校举行升旗仪式庆祝国庆69周年：欢乐迎国庆 浓浓爱国情</strong></p>
+                    <p>10月1日清晨，为喜迎新中国69岁华诞、纪念改革开放40周年，我校于文华公书林前举行升旗仪式。校团委书记杨臣，校团委副书记麻旎、陈娟和团委各部长等干部出席了本次升旗仪式。</p>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <img src="images/bt1.jpg">
+                <div class="color-bar"></div>
+                <div class="text">
+                    <p class="caption"><strong>百团招新火热进行：百社集锦，桂月争鸣</strong></p>
+                    <p>10月20日，由共青团华中师范大学委员会主办，华中师范大学学生社团联合会承办的“百团大战”拉开序幕。本次活动持续两天，旨在传承并发扬社团文化，构建和谐丰富的校园生活。</p>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <p><strong>时讯</strong></p>
+                <div class="events">
+                    <div class="event">
+                        <div class="date">
+                            <span class="month">十月</span>
+                            <span class="day">23</span>
+                        </div>
+                        <div class="media-content">
+                            2018年我校教育部社会科学研究一般项目共获立项53项，立项总数继2010、2014、2015年后再次排名全国第一。
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="date">
+                            <span class="month">十月</span>
+                            <span class="day">24</span>
+                        </div>
+                        <div class="media-content">
+                            国家自然科学基金委公布了2018年度国家自然基金项目评审结果，我校物理学院俞云伟、化学学院陆良秋荣获优秀青年科学基金项目资助。
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="date">
+                            <span class="month">十月</span>
+                            <span class="day">25</span>
+                        </div>
+                        <div class="media-content">
+                            近日，湖北省第十一届社科优秀成果奖正式公布。我校共有34项优秀成果获奖，其中一等奖6项，二等奖12项，三等奖16项，一等奖获奖数量再创新高。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="content3">
+        <div class="thumbnail_part" style="align-items: center;">
+            <h2 class="title">
+                百年沧桑<br />
+                &nbsp&nbsp&nbsp&nbsp&nbsp华师校史
+            </h2>
+            <img src="images/wei.jpg">
+            <div class="introduce">
+                <div class="year">
+                    1888-1976
+                </div>
+                <div class="job">
+                    华中大学校长
+                </div>
+                <div class="detail">
+                    广东珠海县人，毕业于于美国基督教圣公会主办的文华书院，历任文华大学训育主任、文华大学教授、私立华中大学教务长、副校长、校长等职。韦卓民是著名哲学家、教育家、翻译家和宗教学家，著有《中国古籍中的上帝观》、《祭祀的研究》、《孟子理论思想》，译著有《康德纯粹理性批判》等。
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<div class="foot">
 
+<div class="foot">
+    <div class="main">
+        <div class="foot-z">
+            <ul>    <a href="index.htm">首页</a>
+                |
+                <a href="hzbgk/bmzn.htm">合作办概况</a>
+                |
+                <a href="xwkx.htm">新闻快讯</a>
+                |
+                <a href="tzgg.htm">通知公告</a>
+                |
+                <a href="http://jyfzb.ccnu.edu.cn/" target="_blank">合作办学</a>
+                |
+                <a href="dwhz.htm">对外合作</a>
+                |
+                <a href="lsh/gywm.htm" target="_blank">理事会</a>
+                |
+                <a href="http://xyh.ccnu.edu.cn/" target="_blank">校友会</a>
+                |
+                <a href="http://jjh.ccnu.edu.cn/" target="_blank">基金会</a>
+                |
+                <a href="wzdt.htm">网站地图</a>
+
+            </ul></div>
+        <div class="foot-x"><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+            <p style="text-align: center; padding-top: 20px">办公地址：武汉市珞喻路152号老图书馆3楼&nbsp;&nbsp;&nbsp;邮编：430079 &nbsp;&nbsp;&nbsp;电话：67868848</p>
+            <p style="text-align: center; padding-top: 10px">COPYRTGHT@2005-2014版权所有：华中师范大学 鄂ICP备0503325</p>
+        </div>
+    </div>
 </div>
 </body>
 </html>
